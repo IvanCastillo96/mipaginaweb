@@ -1,0 +1,931 @@
+/* Estilos para la barra de navegación 0073e6 */
+header {
+    background-color: #0073e6; /* Color del logo */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centrar los elementos */
+    align-items: center;
+    height: 100px;
+    gap: 20px; /* Espaciado uniforme */
+}
+
+header .logo span {
+    display: block;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Sombra para resaltar */
+    letter-spacing: 2px; /* Espaciado entre letras */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar en el contenedor */
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+header .logo img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 5px;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.3)); /* Sombra difusa */
+}
+
+header nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* Centrar los botones */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Espaciado entre botones */
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    background: linear-gradient(45deg, #FFDD57, #FFC107); /* Degradado amarillo */
+    color: #222; /* Texto oscuro para contraste */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 18px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+}
+
+
+header nav ul li a:hover {
+    background: linear-gradient(45deg, #FFC107, #FFAA00); /* Cambio de color al pasar el mouse */
+    transform: scale(1.1); /* Efecto de zoom */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #ffdd57;
+    color: #0073e6;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffc107;
+}
+
+
+/* Footer */
+footer {
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.social-links {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffdd57;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    header .logo {
+        margin-bottom: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Estilos para la página de Viajes */
+.viajes {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.viajes h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #0073e6;
+}
+
+.grid-viajes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cuadro-viaje {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cuadro-viaje:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cuadro-viaje img {
+    width: 100%;
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Ajusta la imagen sin distorsionar */
+}
+
+.cuadro-viaje h3 {
+    font-size: 1.5rem;
+    margin: 15px 0 10px;
+    color: #0073e6;
+}
+
+.cuadro-viaje p {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 15px 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid-viajes {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-viajes {
+        grid-template-columns: 1fr; /* 1 columna en móviles pequeños */
+    }
+}
+
+/* Estilos para la sección de Pasaportes */
+.pasaportes {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.pasaportes h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #0073e6;
+}
+
+.contenido-pasaportes {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.info-pasaportes {
+    flex: 1;
+    text-align: left;
+}
+
+.info-pasaportes h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #0073e6;
+}
+
+.info-pasaportes p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.pasos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.paso {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.paso h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #0073e6;
+}
+
+.paso p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.paso a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.paso a:hover {
+    text-decoration: underline;
+}
+
+.imagen-pasaportes {
+    flex: 1;
+}
+
+.imagen-pasaportes img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la sección de Testimonios */
+.testimonios {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.cssanimation.lePeek.sequence {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+@keyframes lePeek {
+    25% {
+        transform: rotateX(30deg) translateY(10px) rotate(-13deg);
+    }
+    50% {
+        transform: translateY(-22px) rotate(3deg) scale(1.1);
+    }
+}
+
+.cssanimation.lePeek.sequence h2 {
+    transition: transform 0.3s ease, scale 0.3s ease;
+}
+
+/* Animación que ocurre solo cuando se pasa el cursor */
+.cssanimation.lePeek.sequence:hover h2 {
+    animation: lePeek 1s ease-in-out forwards; /* forwards mantiene el último estado después de la animación */
+}
+
+.grid-testimonios {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.testimonios h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #0073e6;
+}
+
+.grid-testimonios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonio {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonio p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.testimonio .autor {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #0073e6;
+}
+
+.pasos {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #e7f3ff; /* Fondo azul claro */
+}
+
+.pasos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.pasos-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 0; /* Elimina el espacio entre las tarjetas */
+    flex-wrap: wrap;
+}
+
+.paso {
+    background-color: #e7f3ff;
+    border-radius: 8px;
+    padding: 30px;
+    width: 22%; /* Un poco menos de ancho para ajustarse al contenido */
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin: 0; /* Elimina el margen entre los pasos */
+}
+
+.paso:hover {
+    transform: translateY(-10px);
+}
+
+.paso i {
+    font-size: 3rem;
+    color: #1d72b8;
+    margin-bottom: 15px;
+}
+
+.paso h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.paso p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.contactar-whatsapp {
+    background-color: #25d366;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contactar-whatsapp:hover {
+    background-color: #128c7e;
+}
+
+@media (max-width: 768px) {
+    .paso {
+        width: 48%; /* En pantallas medianas, 2 pasos por fila */
+    }
+}
+
+@media (max-width: 480px) {
+    .paso {
+        width: 100%; /* En pantallas pequeñas, 1 paso por fila */
+    }
+}
+
+/* Estilos para la sección de Visas */
+.visas {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.visas h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0073e6;
+}
+
+.visas .intro {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.cuadros-visas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cuadro-visa {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cuadro-visa:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cuadro-visa .numero {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+.cuadro-visa h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #0073e6;
+}
+
+.cuadro-visa p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.info-visas {
+    padding: 50px 20px;
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-visas h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0073e6;
+}
+
+.info-visas p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.info-visas ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.info-visas ul li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cuadros-visas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cuadro-visa {
+        width: 80%;
+    }
+}
+
+/* Estilos para el botón "¡Quiero mi Visa!" */
+.boton-visa {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.btn-visa {
+    background-color: #0073e6;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-visa:hover {
+    background-color: #005bb5;
+}
+
+/* Estilos para la sección de Contacto */
+.contacto {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f0f8ff; /* Fondo pastel azul */
+}
+
+.contacto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #0073e6;
+}
+
+.contenido-contacto {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.formulario {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.formulario label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    border-color: #0073e6;
+    outline: none;
+}
+
+.formulario .opciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.formulario .opcion {
+    flex: 1 1 calc(50% - 10px);
+    background-color: #e6f7ff; /* Fondo pastel azul claro */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.formulario .opcion input {
+    margin-right: 10px;
+}
+
+.formulario button {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: #005bb5;
+}
+
+.mapa-info {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mapa {
+    margin-bottom: 20px;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.info-adicional {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.recuadro {
+    background-color: #e6f7ff; /* Fondo pastel azul claro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.recuadro i {
+    font-size: 2rem;
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+.recuadro p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.redes-sociales a {
+    color: #0073e6;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.redes-sociales a:hover {
+    color: #005bb5;
+}
+
+/* Popup de Confirmación */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-contenido {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup-contenido img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.popup-contenido h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #0073e6;
+}
+
+.popup-contenido button {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.popup-contenido button:hover {
+    background-color: #005bb5;
+}
+
+/* Botones flotantes de WhatsApp y Redes Sociales */
+.botones-flotantes {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.botones-flotantes a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.botones-flotantes a:hover {
+    transform: scale(1.1);
+}
+
+.botones-flotantes .whatsapp {
+    background-color: #25d366;
+}
+
+.botones-flotantes .facebook {
+    background-color: #3b5998;
+}
+
+.botones-flotantes .instagram {
+    background-color: #e4405f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contenido-contacto {
+        flex-direction: column;
+    }
+
+    .formulario .opcion {
+        flex: 1 1 100%;
+    }
+
+    .mapa iframe {
+        height: 200px;
+    }
+
+    .info-adicional {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Estilos para el botón de WhatsApp en la esquina superior derecha */
+.whatsapp-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-btn a {
+    display: flex;
+    align-items: center;
+    background-color: #25d366;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background-color: #128c7e;
+    transform: scale(1.1);
+}
+
+.whatsapp-btn i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contenido-pasaportes {
+        flex-direction: column;
+    }
+
+    .grid-testimonios {
+        grid-template-columns: 1fr;
+    }
+}
+
+

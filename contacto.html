@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - +Mundo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Botón de WhatsApp en la esquina superior derecha -->
+<div class="whatsapp-btn">
+    <a href="https://wa.me/529612253025" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Contáctame!</span>
+    </a>
+</div>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/logo.png" alt="Logo +Mundo">
+                <span>+Mundo</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="viajes.html" class="nav-link">Viajes</a></li>
+                <li><a href="paquetes.html" class="nav-link">Paquetes</a></li>
+                <li><a href="excursiones.html" class="nav-link">Excursiones</a></li>
+                <li><a href="pasaportes.html" class="nav-link">Pasaportes</a></li>
+                <li><a href="visas.html" class="nav-link">Visas</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contacto">
+        <h2>Contacto</h2>
+        <div class="contenido-contacto">
+            <!-- Formulario de Contacto -->
+            <form id="formulario-contacto" class="formulario">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="celular">Número de Celular:</label>
+                <input type="tel" id="celular" name="celular" required>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label>¿En qué está interesado?</label>
+                <div class="opciones">
+                    <div class="opcion">
+                        <input type="checkbox" id="viaje" name="interes" value="Viaje">
+                        <label for="viaje">Viaje</label>
+                    </div>
+                    <div class="opcion">
+                        <input type="checkbox" id="paquete" name="interes" value="Paquete">
+                        <label for="paquete">Paquete</label>
+                    </div>
+                    <div class="opcion">
+                        <input type="checkbox" id="excursion" name="interes" value="Excursion">
+                        <label for="excursion">Excursión</label>
+                    </div>
+                    <div class="opcion">
+                        <input type="checkbox" id="pasaporte" name="interes" value="Pasaporte">
+                        <label for="pasaporte">Pasaporte</label>
+                    </div>
+                    <div class="opcion">
+                        <input type="checkbox" id="visa" name="interes" value="Visa">
+                        <label for="visa">Visa</label>
+                    </div>
+                </div>
+
+                <label for="mensaje">Duda o Pregunta:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <!-- Mapa de Google Maps e Información Adicional -->
+            <div class="mapa-info">
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.123456789012!2d-93.12345678901234!3d16.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ed274580d606b3%3A0xa3f9e5af89899b65!2sTacos%20Los%20Gordos!5e0!3m2!1ses!2smx!4v1234567890123"
+                        width="100%"
+                        height="300"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+                <div class="info-adicional">
+                    <div class="recuadro">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Av Rosa del Ote 164, El Bosque, 29049 Tuxtla Gutiérrez, Chis.</p>
+                    </div>
+                    <div class="recuadro">
+                        <i class="fas fa-phone"></i>
+                        <p>9612253025</p>
+                        <p>9612440005</p>
+                    </div>
+                    <div class="recuadro">
+                        <i class="fas fa-users"></i>
+                        <p>Asesoría 24/hrs</p>
+                        <p>Soporte 24/hrs</p>
+                    </div>
+                    <div class="recuadro">
+                        <i class="fas fa-share-alt"></i>
+                        <p>Síguenos en:</p>
+                        <div class="redes-sociales">
+                            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+                            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup de Confirmación -->
+    <div id="popup" class="popup">
+        <div class="popup-contenido">
+            <img src="assets/felicidades.jpg" alt="Felicidades">
+            <h2>¡Tu viaje está por comenzar! Felicidades</h2>
+            <button id="cerrar-popup">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Botones de WhatsApp y Redes Sociales -->
+    <div class="botones-flotantes">
+        <a href="https://wa.me/525552961887" target="_blank" class="whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://facebook.com" target="_blank" class="facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p>&copy; 2023 +Mundo - Agencia de Viajes. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Script para enviar el formulario a Telegram y mostrar el popup
+        const formulario = document.getElementById('formulario-contacto');
+        const popup = document.getElementById('popup');
+        const cerrarPopup = document.getElementById('cerrar-popup');
+        const botToken = '8058249972:AAGM_XkBgMbz91AEWDPaF1mUYQzcg3zVGvM';
+        const chatId = '686229686';
+
+        formulario.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const nombre = document.getElementById('nombre').value;
+            const celular = document.getElementById('celular').value;
+            const correo = document.getElementById('correo').value;
+            const intereses = Array.from(document.querySelectorAll('input[name="interes"]:checked')).map(el => el.value).join(', ');
+            const mensaje = document.getElementById('mensaje').value;
+
+            const texto = `
+                *Nuevo mensaje de contacto:*
+                - *Nombre:* ${nombre}
+                - *Celular:* ${celular}
+                - *Correo:* ${correo}
+                - *Intereses:* ${intereses}
+                - *Mensaje:* ${mensaje}
+            `;
+
+            const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(texto)}`;
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    // Mostrar el popup
+                    popup.style.display = 'flex';
+                    formulario.reset();
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Hubo un error al enviar el mensaje. Inténtalo de nuevo.');
+                });
+        });
+
+        // Cerrar el popup
+        cerrarPopup.addEventListener('click', function () {
+            popup.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
